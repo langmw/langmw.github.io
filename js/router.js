@@ -4,7 +4,7 @@ const Main = {
             heroes: heroes
         }
     },
-    template: '<div><router-link v-for="(hero, i) in heroes" :to="`/hero/${i}`" :key="i" :type="hero.type"><img :src="`images/portrait/${i}.png`" class="u-max-full-width mh20"></router-link></div>' 
+    template: '<div><router-link v-for="(hero, i) in heroes" :to="`/hero/${i}`" :key="i" :type="hero.type"><img :src="`images/portrait/${i}.png`" class="mh20 portrait"></router-link></div>' 
 }
 
 const Hero = {

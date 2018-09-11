@@ -12,6 +12,10 @@ a {
     color: #d6aa54;
 }
 
+.portrait {
+    width: 120px;
+}
+
 a:hover {
     color: #d6aa54;
 }
