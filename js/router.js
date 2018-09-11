@@ -28,7 +28,7 @@ const Hero = {
             <div class="row-name">{{ hero.name }}</div>
             <div class="row-content">
                 <img :src="'images/type/' + hero.type + '.png'" class="u-max-full-width">
-                <img :src="'images/heroes/' + $route.params.id + '.png'" style="width: 500px;">
+                <img :src="'images/heroes/' + $route.params.id + '.png'" class="u-max-full-width">
             </div>
         </div>
         <div class="row u-max-full-width">
