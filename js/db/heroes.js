@@ -175,11 +175,3 @@ const heroes = [
         skills: [30, 10, 31, 32, 33, 34, 35, 36, 37]
     }
 ]
-
-function range(length) {
-    let arr = [];
-    for (let i = 0; i < length; i++) {
-        arr.push(i)
-    }
-    return arr;
-}

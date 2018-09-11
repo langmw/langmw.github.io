@@ -8,6 +8,14 @@ p {
     margin-bottom: 0;
 }
 
+a {
+    color: #d6aa54;
+}
+
+a:hover {
+    color: #d6aa54;
+}
+
 .mh20 {
     margin: 0 20px;
 }
