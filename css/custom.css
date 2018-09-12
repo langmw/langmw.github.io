@@ -4,7 +4,7 @@ body {
     color: #f2d35a;
 }
 
-p {
+p, ul, table {
     margin-bottom: 0;
 }
 
@@ -14,30 +14,15 @@ a {
 
 .portrait {
     width: 120px;
+    margin-right: 20px;
 }
 
 a:hover {
     color: #d6aa54;
 }
 
-.mh20 {
-    margin: 0 20px;
-}
-
 .pv20 {
     padding: 20px 0;
-}
-
-.img {
-    display: block;
-}
-
-ul {
-    margin: 0;
-}
-
-table {
-    margin: 0;
 }
 
 .row {
@@ -68,4 +53,15 @@ td {
 
 .help {
     padding: 40px 0;
+}
+
+select {
+    background: #f2d35a;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+select:focus {
+    border: none;
 }

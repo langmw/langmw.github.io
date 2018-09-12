@@ -4,7 +4,10 @@ const Main = {
             heroes: heroes
         }
     },
-    template: '<div><router-link v-for="(hero, i) in heroes" :to="`/hero/${i}`" :key="i" :type="hero.type"><img :src="`images/portrait/${i}.png`" class="mh20 portrait"></router-link></div>' 
+    template: `
+    <div>
+        <router-link v-for="(hero, i) in heroes" :to="'/hero/' + i" :key="i"><img :src="'images/portrait/' + i + '.png'" class="mh20 portrait"></router-link>
+    </div>` 
 }
 
 const Hero = {
@@ -14,6 +17,15 @@ const Hero = {
             troops: troops,
             ability: ability,
             skills: skills
+        }
+    },
+    methods: {
+        skill(id) {
+            if (skills[id].id) {
+                return skills[id].id;
+            } else {
+                return id;
+            }
         }
     },
     computed: {
@@ -124,7 +136,7 @@ const Hero = {
             <div class="row-name">Skill Unlock</div>
             <div class="block" v-for="skillId in hero.skills">
                 <div class="two columns">
-                    <img :src="'images/skills/' + skillId + '.png'" class="u-full-width" style="border-radius: 10px;">
+                    <img :src="'images/skills/' + skill(skillId) + '.png'" class="u-full-width" style="border-radius: 10px;">
                 </div>
                 <div class="ten columns">
                     <p style="padding-bottom: 20px;"><strong>{{ skills[skillId].name }}</strong></p>
