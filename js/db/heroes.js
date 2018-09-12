@@ -1,7 +1,7 @@
 const heroes = [
     {
         name: "Altemüller",
-        type: 3,
+        type: 0,
         history: "拥有利古利亚帝国的王位继承权，同时拥有帝国大军的指挥权，擅长谋略，剑术超群，手下拥有4个善战的将军",
         stats: [335, 55, 27, 28, 30, 40],
         ability: 0,

@@ -54,14 +54,3 @@ td {
 .help {
     padding: 40px 0;
 }
-
-select {
-    background: #f2d35a;
-    color: black;
-    border: none;
-    outline: none;
-}
-
-select:focus {
-    border: none;
-}
